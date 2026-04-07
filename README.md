@@ -57,8 +57,7 @@ MLOps & MODEL RELIABILITY
 - Automated Leakage Filter: The code scans feature names for keywords like "confidence", "prediction", "anomaly_label" and dynamically drops them before training.
 - Sanity Check Protocol: Before finalizing, the pipeline trains a baseline model on randomly shuffled targets. If the F1-Score remains unusually high (>0.30), the system triggers a warning that hidden shortcuts or spurious correlations exist in the data.
 
-------------------------------------------------------------
-
+```md
 DEPLOYMENT ARTIFACTS
 
 The script automatically generates a highly structured folder and compresses it into a `.zip` archive containing:
@@ -75,7 +74,7 @@ blood-cell-anomaly-detection-2025_models/
     ├── training_metadata.json (Complete hyperparameters and evaluation scores)
     └── classification_report.txt
 
-------------------------------------------------------------
+```
 
 INSTALLATION
 
